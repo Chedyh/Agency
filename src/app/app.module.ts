@@ -13,6 +13,10 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { ProjectsDoneComponent } from './projects-done/projects-done.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { TeamComponent } from './team/team.component';
+import { ProjectItemComponent } from './project-item/project-item.component';
+import { ClientItemComponent } from './client-item/client-item.component';
+import { TeamMemberComponent } from './team-member/team-member.component';
+import { HowDoesItWorkStepComponent } from './how-does-it-work-step/how-does-it-work-step.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { TeamComponent } from './team/team.component';
     HowItWorksComponent,
     ProjectsDoneComponent,
     PricingComponent,
-    TeamComponent
+    TeamComponent,
+    ProjectItemComponent,
+    ClientItemComponent,
+    TeamMemberComponent,
+    HowDoesItWorkStepComponent
   ],
   imports: [
     BrowserModule,

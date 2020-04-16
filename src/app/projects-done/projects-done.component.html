@@ -1,105 +1,42 @@
 <!-- Project  -->
 <section class="iq-project position-relative pt-0">
+  <!-- Entry Animation -->
   <div class="scrollme">
     <img src="../../assets/images/others/13.png" class="img-fluid project-overlay-left animateme"
-         data-when="enter"
-         data-from="0.5"
-         data-to="0"
-         data-translatey="100" alt="image">
+          data-when="enter"
+          data-from="0.5"
+          data-to="0"
+          data-translatey="100" alt="image">
   </div>
+  <!-- Entry Animation End -->
+  <!--Little Header +1520 projects done / Explore All -->
   <div class="container">
     <div class="row mb-3 align-items-center">
       <div class="col-lg-6 ">
         <h2  class="display-2  iq-fw-9 d-inline-block title"><span class="counter">1520</span> <sup class=" d-inline-block">+</sup></h2>
         <h3 class="d-inline-block  iq-fw-8">Project Done.</h3>
       </div>
+      <!--Explore All Button -->
       <div class="col-lg-6 ">
         <a class="slide-button button float-right explore-btn" href="portfolio.html">
           <div class="first">Explore All</div>
           <div class="second">Explore All</div>
         </a>
       </div>
+      <!--Explore All Button End -->
     </div>
   </div>
+  <!--Little Header +1520 projects done / Explore All End-->
+  <!-- Projects Carousel -->
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12">
-        <div id="portfolio-carousel" class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/1.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/2.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/3.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/4.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/1.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/2.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/3.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="iq-portfolio">
-              <img src="../../assets/images/project/4.png" class="img-fluid" alt="image">
-              <div class="portfolio-info">
-                <a href="#"><span class="text-black">Design Concept</span></a>
-                <a href="#" class="text-uppercase text-gray float-right">Design</a>
-              </div>
-            </div>
-          </div>
+        <div id="portfolio-carousel" class="owl-carousel" data-autoplay="true" data-nav="false" data-dots="false" data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="1" data-items-mobile-sm="1" data-margin="30">
+          <app-project-item></app-project-item>
         </div>
       </div>
     </div>
   </div>
+  <!-- Projects Carousel End -->
 </section>
 <!-- Project END -->
