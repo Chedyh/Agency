@@ -1,25 +1,32 @@
 import { Component, OnInit } from '@angular/core';
+import {DynamicScriptLoaderService} from "../../shared/DynamicScriptLoaderService";
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  styleUrls: ['./banner.component.css'],
+  providers: [DynamicScriptLoaderService]
 })
 export class BannerComponent implements OnInit {
-  public loadExternalScript(url: string) {
-    const body = document.body as HTMLDivElement;
-    const script = document.createElement('script');
-    script.innerHTML = '';
-    script.src = url;
-    script.async = true;
-    script.defer = true;
-    body.appendChild(script);
-  }
+
+  public scrip : string[] ;
+
+  constructor(private dynamicScript: DynamicScriptLoaderService) { }
+
 
   ngOnInit() {
-    this.loadExternalScript('../../assets/revslider/js/extensions/custom.js');
-  }
-  constructor() { }
+    this.scrip = this.dynamicScript.scrip;
+    console.log(this.scrip);
+    this.loadScripts(this.scrip);
 
+  }
+
+  private loadScripts(scr: string[]) {
+    // You can load multiple scripts by just providing the key as argument into load method of the service
+    console.log(scr);
+    this.dynamicScript.load(scr[30]).then(data => {
+      // Script Loaded Successfully
+    }).catch(error => console.log(error));
+  }
 
 }

@@ -16,6 +16,8 @@ import { ProjectItemComponent } from './projects-done/project-item/project-item.
 import { ClientItemComponent } from './clients/client-item/client-item.component';
 import { TeamMemberComponent } from './team/team-member/team-member.component';
 import { HowDoesItWorkStepComponent } from './how-it-works/how-does-it-work-step/how-does-it-work-step.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
+import { ProjectPageItemComponent } from './project-page/project-page-item/project-page-item.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { HowDoesItWorkStepComponent } from './how-it-works/how-does-it-work-step
     ProjectItemComponent,
     ClientItemComponent,
     TeamMemberComponent,
-    HowDoesItWorkStepComponent
+    HowDoesItWorkStepComponent,
+    ProjectPageComponent,
+    ProjectPageItemComponent
   ],
   imports: [
     BrowserModule,

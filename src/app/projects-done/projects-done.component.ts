@@ -9,7 +9,6 @@ export class ProjectsDoneComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
