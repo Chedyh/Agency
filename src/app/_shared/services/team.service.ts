@@ -2,7 +2,9 @@ import {Injectable} from '@angular/core';
 import {Team} from '../models/team.model';
 import {Subject} from 'rxjs';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class TeamService {
   private teamMembers: Team[] = [
     {

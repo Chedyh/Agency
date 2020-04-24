@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DynamicScriptLoaderService} from '../_shared/services/DynamicScriptLoaderService';
 
+
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',

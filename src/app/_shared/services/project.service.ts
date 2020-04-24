@@ -2,7 +2,9 @@ import {Injectable} from '@angular/core';
 import {Project} from '../models/project.model';
 import {Subject} from 'rxjs';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ProjectService {
   private projects: Project[] = [
     {
