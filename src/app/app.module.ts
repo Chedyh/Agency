@@ -17,7 +17,8 @@ import { ClientItemComponent } from './clients/client-item/client-item.component
 import { TeamMemberComponent } from './team/team-member/team-member.component';
 import { HowDoesItWorkStepComponent } from './how-it-works/how-does-it-work-step/how-does-it-work-step.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
-import { ProjectPageItemComponent } from './project-page/project-page-item/project-page-item.component';
+import {ProjectService} from './_shared/services/project.service';
+import {TeamService} from "./_shared/services/team.service";
 
 @NgModule({
   declarations: [
@@ -36,14 +37,13 @@ import { ProjectPageItemComponent } from './project-page/project-page-item/proje
     ClientItemComponent,
     TeamMemberComponent,
     HowDoesItWorkStepComponent,
-    ProjectPageComponent,
-    ProjectPageItemComponent
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProjectService, TeamService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,17 @@
-<div class="item">
+<div class="iq-grid-item creative">
   <div class="iq-portfolio">
-    <img src="../../../assets/images/project/1.png" class="img-fluid" alt="image">
+    <img [src]="project.imagePath" class="img-fluid" alt="image">
+    <div class="waves-box" *ngIf="project.isVideo">
+      <a [href]="project.videoPath" class="video-play  popup-youtube" ><i class="fas fa-play"></i></a>
+      <div class="iq-waves">
+        <div class="waves wave-1"></div>
+        <div class="waves wave-2"></div>
+        <div class="waves wave-3"></div>
+      </div>
+    </div>
     <div class="portfolio-info">
-      <a href="#"><span class="text-black">Design Concept</span></a>
-      <a href="#" class="text-uppercase text-gray float-right">Design</a>
+      <a href="#"><span class="text-black">{{project.name | titlecase}}</span></a>
+      <a href="#" class="text-uppercase text-gray float-right">{{project.date | date}}</a>
     </div>
   </div>
 </div>

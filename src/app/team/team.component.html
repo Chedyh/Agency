@@ -13,8 +13,8 @@
     <!-- Little Header Meet The Team / Our Best Team End -->
     <!-- Team Members -->
     <div class="row">
-      <div class="col-lg-3 col-md-6">
-        <app-team-member></app-team-member>
+      <div class="col-sm-6" *ngFor="let teamMember of team" >
+        <app-team-member [teamMember]="teamMember"></app-team-member>
       </div>
     </div>
     <!-- Team Members End -->

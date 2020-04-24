@@ -1,19 +1,24 @@
-<div class="team-box">
-  <div class="team-img text-center"> <img src="../../../assets/images/team/01.jpg" class="img-fluid rounded-circle" alt="image"> </div>
-  <div class="team-detail">
-    <a class="team-plus" href="#"><i class="fas fa-plus"></i></a>
-    <div class="team-info">
-      <h6 class="mb-0 text-white "><a href="#">Marie Mart</a></h6>
-      <span class="mb-0 text-white text-gray iq-fw-4">Web Designer</span>
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+    <div class="team-box">
+      <div class="team-img text-center"> <img [src]="teamMember.imagePath" class="img-fluid rounded-circle" alt="image"> </div>
+      <div class="team-detail">
+        <a class="team-plus" href="#"><i class="fas fa-plus"></i></a>
+        <div class="team-info">
+          <h6 class="mb-0 text-white "><a href="#">{{teamMember.firstName}} {{teamMember.lastName}}</a></h6>
+          <span class="mb-0 text-white text-gray iq-fw-4">{{teamMember.profession}}</span>
+        </div>
+      </div>
+      <div class="team-hover">
+        <p>{{teamMember.description}}.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item" ><a [href]="teamMember.facebookLink"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item" ><a [href]="teamMember.portfolioLink"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item" ><a [href]="teamMember.linkedinLink"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="team-hover">
-    <p>Progravida nibh vel velit auctor alinean sollicitudin nisi elit consequat ipsum.</p>
-    <ul class="list-inline">
-      <li class="list-inline-item" ><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li class="list-inline-item" ><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li class="list-inline-item" ><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-      <li class="list-inline-item" ><a href="#"><i class="fab fa-instagram"></i></a></li>
-    </ul>
-  </div>
+  <div class="col-lg-2"></div>
 </div>

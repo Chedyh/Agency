@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {DynamicScriptLoaderService} from "../../shared/DynamicScriptLoaderService";
+import {DynamicScriptLoaderService} from '../_shared/services/DynamicScriptLoaderService';
 
 @Component({
   selector: 'app-banner',
@@ -9,7 +9,7 @@ import {DynamicScriptLoaderService} from "../../shared/DynamicScriptLoaderServic
 })
 export class BannerComponent implements OnInit {
 
-  public scrip : string[] ;
+  public scrip: string[] ;
 
   constructor(private dynamicScript: DynamicScriptLoaderService) { }
 
