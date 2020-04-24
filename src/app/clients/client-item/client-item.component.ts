@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Testimonial} from "../../_shared/_models/testimonial.model";
 
 @Component({
   selector: 'app-client-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./client-item.component.css']
 })
 export class ClientItemComponent implements OnInit {
+  @Input() testimonial: Testimonial;
 
   constructor() { }
 

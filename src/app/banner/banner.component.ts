@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import {DynamicScriptLoaderService} from '../_shared/services/DynamicScriptLoaderService';
+=======
+import {DynamicScriptLoaderService} from '../_shared/_services/DynamicScriptLoaderService';
+>>>>>>> 41e8a9e74b797593730726bca15c63a121a3858a
 
 @Component({
   selector: 'app-banner',

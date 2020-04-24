@@ -7,6 +7,7 @@
          data-to="0"
          data-translatey="500" alt="image">
   </div>
+
   <!-- Entry Animation End -->
   <div class="container">
     <!-- Little Header Testimonial / Our Clients Say -->
@@ -37,12 +38,28 @@
     <div class="row">
       <div class="col-lg-12">
         <div id="testimonial-slider" class="owl-carousel owl-theme owl-loaded iq-mt-50" data-dots="true" data-nav="true" data-items="1" data-xs-items="1" data-sm-items="1" data-md-items="1" data-lg-items="1" data-autoplay="true">
-          <app-client-item></app-client-item>
-          <app-client-item></app-client-item>
+          <app-client-item *ngFor="let testimonial of testimonials" [testimonial]="testimonial"></app-client-item>
 
         </div>
       </div>
     </div>
     <!-- Clients Carousel End -->
   </div>
+  <div class="container">
+    <div class="row mb-3 align-items-center">
+      <div class="col-lg-6 ">
+        <h2  class="display-2  iq-fw-9 d-inline-block title"><span class="counter">200</span> <sup class=" d-inline-block">+</sup></h2>
+        <h3 class="d-inline-block  iq-fw-8">Satisfied Clients.</h3>
+      </div>
+      <!--Explore All Button -->
+      <div class="col-lg-6 " >
+        <a class="slide-button button float-right explore-btn" href="/reviews">
+          <div class="first">Explore All</div>
+          <div class="second">Explore All</div>
+        </a>
+      </div>
+      <!--Explore All Button End -->
+    </div>
+  </div>
+
 </section>

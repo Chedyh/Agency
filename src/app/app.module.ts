@@ -18,7 +18,11 @@ import { TeamMemberComponent } from './team/team-member/team-member.component';
 import { HowDoesItWorkStepComponent } from './how-it-works/how-does-it-work-step/how-does-it-work-step.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import {ProjectService} from './_shared/services/project.service';
-import {TeamService} from "./_shared/services/team.service";
+import {TeamService} from './_shared/services/team.service';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialItemComponent } from './testimonials/testimonial-item/testimonial-item.component';
+import {ShortenPipe} from './shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,11 @@ import {TeamService} from "./_shared/services/team.service";
     ClientItemComponent,
     TeamMemberComponent,
     HowDoesItWorkStepComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ReviewsComponent,
+    TestimonialsComponent,
+    TestimonialItemComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,
