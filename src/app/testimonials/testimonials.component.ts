@@ -4,11 +4,11 @@ import {Subscription} from "rxjs";
 import {TestimonialService} from "../_shared/_services/testimonial.service";
 
 @Component({
-  selector: 'app-clients',
-  templateUrl: './clients.component.html',
-  styleUrls: ['./clients.component.css']
+  selector: 'app-testimonials',
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.css']
 })
-export class ClientsComponent implements OnInit, OnDestroy {
+export class TestimonialsComponent implements OnInit, OnDestroy {
   testimonials: Testimonial[] = [];
   private testimonialsSub: Subscription;
 
@@ -26,4 +26,5 @@ export class ClientsComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     this.testimonialsSub.unsubscribe();
   }
+
 }

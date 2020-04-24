@@ -1,0 +1,70 @@
+<!-- Breadcrumb -->
+<section class="iq-breadcrumb">
+
+  <div class="iq-breadcrumb-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-7 align-self-center">
+          <h2 class="iq-fw-8 mb-3">Blog</h2>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">All Blog Grid</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="col-md-5">
+          <img src="../../assets/images/breadcrumb/blog.png" class="img-fluid" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="iq-breadcrumb-img">
+    <img src="../../assets/images/breadcrumb/02.png" class="img-fluid breadcrumb-two" alt="image">
+  </div>
+</section>
+<!-- Breadcrumb END -->
+<!-- Main Content -->
+
+<div class="main-content">
+  <!-- Blogs -->
+  <section class="iq-blogs">
+    <div class="container">
+
+      <div class="row">
+        <!--  testimonial item-->
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let testimonial of testimonials" >
+          <div class="main-blog">
+        <app-testimonial-item [testimonial]="testimonial"></app-testimonial-item>
+          </div>
+        </div>
+      </div>
+
+    <!-- Pagination-->
+      <div class="row mt-5">
+        <div class="col-sm-12">
+          <nav>
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <span class="page-link"><i class="fas fa-arrow-left"></i></span>
+              </li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+              <li class="page-item active" aria-current="page">
+                              <span class="page-link">
+                                 2
+                                 <span class="sr-only">(current)</span>
+                              </span>
+              </li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+              <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#"><i class="fas fa-arrow-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Blogs END -->
